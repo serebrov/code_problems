@@ -5,6 +5,6 @@ init_hr:
 	mkdir hackerrank_$(P)/input
 	mkdir hackerrank_$(P)/output
 
-# make run_hr P=example_name
+# make run_hr F=example_folder
 run_hr:
-	cd hackerrank_$(P) && python3 ../hrtool.py
+	cd $(F) && python3 ../hrtool.py
